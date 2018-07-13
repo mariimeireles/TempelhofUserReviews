@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49072F6920F8AED900BAB0A6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F6820F8AED900BAB0A6 /* Alamofire.framework */; };
+		49072F6B20F8AEDF00BAB0A6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F6A20F8AEDF00BAB0A6 /* Nimble.framework */; };
+		49072F6D20F8AEE500BAB0A6 /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F6C20F8AEE500BAB0A6 /* RxAlamofire.framework */; };
+		49072F6F20F8AEEC00BAB0A6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F6E20F8AEEC00BAB0A6 /* RxCocoa.framework */; };
+		49072F7120F8AEF200BAB0A6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F7020F8AEF200BAB0A6 /* RxSwift.framework */; };
+		49072F7320F8AEF900BAB0A6 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F7220F8AEF900BAB0A6 /* RxTest.framework */; };
 		49AD6F3620F87F8800E11393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6F3520F87F8800E11393 /* AppDelegate.swift */; };
 		49AD6F3D20F87F8900E11393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AD6F3C20F87F8900E11393 /* Assets.xcassets */; };
 		49AD6F4020F87F8900E11393 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AD6F3E20F87F8900E11393 /* LaunchScreen.storyboard */; };
@@ -16,9 +22,16 @@
 		49AD6F5220F8833400E11393 /* InfrastructureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6F5120F8833400E11393 /* InfrastructureHandler.swift */; };
 		49AD6F5420F8834700E11393 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6F5320F8834700E11393 /* ServiceError.swift */; };
 		49AD6F5620F8835900E11393 /* RESTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6F5520F8835900E11393 /* RESTError.swift */; };
+		49AD6F6320F8AC1400E11393 /* UserReviewWebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6F6220F8AC1400E11393 /* UserReviewWebServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49072F6820F8AED900BAB0A6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		49072F6A20F8AEDF00BAB0A6 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = SOURCE_ROOT; };
+		49072F6C20F8AEE500BAB0A6 /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = SOURCE_ROOT; };
+		49072F6E20F8AEEC00BAB0A6 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
+		49072F7020F8AEF200BAB0A6 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
+		49072F7220F8AEF900BAB0A6 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = SOURCE_ROOT; };
 		49AD6F3220F87F8800E11393 /* TempelhofUserReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempelhofUserReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AD6F3520F87F8800E11393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49AD6F3C20F87F8900E11393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +43,7 @@
 		49AD6F5120F8833400E11393 /* InfrastructureHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfrastructureHandler.swift; sourceTree = "<group>"; };
 		49AD6F5320F8834700E11393 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		49AD6F5520F8835900E11393 /* RESTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTError.swift; sourceTree = "<group>"; };
+		49AD6F6220F8AC1400E11393 /* UserReviewWebServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReviewWebServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +51,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49072F7120F8AEF200BAB0A6 /* RxSwift.framework in Frameworks */,
+				49072F6F20F8AEEC00BAB0A6 /* RxCocoa.framework in Frameworks */,
+				49072F7320F8AEF900BAB0A6 /* RxTest.framework in Frameworks */,
+				49072F6920F8AED900BAB0A6 /* Alamofire.framework in Frameworks */,
+				49072F6B20F8AEDF00BAB0A6 /* Nimble.framework in Frameworks */,
+				49072F6D20F8AEE500BAB0A6 /* RxAlamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				49AD6F4B20F882CC00E11393 /* Infrastructure */,
+				49AD6F6020F8A51500E11393 /* NetworkRequest */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -119,6 +140,7 @@
 		49AD6F5820F8851500E11393 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				49AD6F6420F8AC2800E11393 /* Libraries */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -172,6 +194,35 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		49AD6F6020F8A51500E11393 /* NetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				49AD6F6120F8A5FA00E11393 /* UserReviewWebService */,
+			);
+			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		49AD6F6120F8A5FA00E11393 /* UserReviewWebService */ = {
+			isa = PBXGroup;
+			children = (
+				49AD6F6220F8AC1400E11393 /* UserReviewWebServiceProtocol.swift */,
+			);
+			path = UserReviewWebService;
+			sourceTree = "<group>";
+		};
+		49AD6F6420F8AC2800E11393 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				49072F7220F8AEF900BAB0A6 /* RxTest.framework */,
+				49072F7020F8AEF200BAB0A6 /* RxSwift.framework */,
+				49072F6E20F8AEEC00BAB0A6 /* RxCocoa.framework */,
+				49072F6C20F8AEE500BAB0A6 /* RxAlamofire.framework */,
+				49072F6A20F8AEDF00BAB0A6 /* Nimble.framework */,
+				49072F6820F8AED900BAB0A6 /* Alamofire.framework */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,6 +233,7 @@
 				49AD6F2E20F87F8800E11393 /* Sources */,
 				49AD6F2F20F87F8800E11393 /* Frameworks */,
 				49AD6F3020F87F8800E11393 /* Resources */,
+				49AD6F7520F8ACB600E11393 /* Carthage Script */,
 			);
 			buildRules = (
 			);
@@ -237,6 +289,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49AD6F7520F8ACB600E11393 /* Carthage Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			name = "Carthage Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		49AD6F2E20F87F8800E11393 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -245,6 +318,7 @@
 				49AD6F4920F8800200E11393 /* UserReview.swift in Sources */,
 				49AD6F5620F8835900E11393 /* RESTError.swift in Sources */,
 				49AD6F3620F87F8800E11393 /* AppDelegate.swift in Sources */,
+				49AD6F6320F8AC1400E11393 /* UserReviewWebServiceProtocol.swift in Sources */,
 				49AD6F5020F8831F00E11393 /* InternetConnectionHandler.swift in Sources */,
 				49AD6F4E20F882E200E11393 /* InternetConnectionError.swift in Sources */,
 				49AD6F5420F8834700E11393 /* ServiceError.swift in Sources */,
@@ -386,6 +460,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQU3QL4RG3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/TempelhofUserReviews/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -405,6 +483,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQU3QL4RG3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/TempelhofUserReviews/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
