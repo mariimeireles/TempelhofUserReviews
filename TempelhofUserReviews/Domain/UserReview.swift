@@ -9,7 +9,5 @@ struct UserReview: Codable {
         let message: String
         let author: String
         let date: String
-        let reviewerName: String
-        let reviewerCountry: String
     }
 }

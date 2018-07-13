@@ -30,6 +30,7 @@
 		49CFD29620F8B58F0052F5BE /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49072F6A20F8AEDF00BAB0A6 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		49CFD29B20F8B67A0052F5BE /* InfrastructureHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD29A20F8B67A0052F5BE /* InfrastructureHandlerTests.swift */; };
 		49CFD29D20F8B6B60052F5BE /* InternetConnectionHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD29C20F8B6B60052F5BE /* InternetConnectionHandlerTests.swift */; };
+		49CFD29F20F8B7750052F5BE /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD29E20F8B7750052F5BE /* ReviewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		49CFD29720F8B6300052F5BE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49CFD29A20F8B67A0052F5BE /* InfrastructureHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfrastructureHandlerTests.swift; sourceTree = "<group>"; };
 		49CFD29C20F8B6B60052F5BE /* InternetConnectionHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionHandlerTests.swift; sourceTree = "<group>"; };
+		49CFD29E20F8B7750052F5BE /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 		49AD6F5C20F8862200E11393 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				49CFD29E20F8B7750052F5BE /* ReviewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				49072F7520F8B00C00BAB0A6 /* UserReviewWebService.swift in Sources */,
 				49AD6F3620F87F8800E11393 /* AppDelegate.swift in Sources */,
 				49AD6F6320F8AC1400E11393 /* UserReviewWebServiceProtocol.swift in Sources */,
+				49CFD29F20F8B7750052F5BE /* ReviewModel.swift in Sources */,
 				49AD6F5020F8831F00E11393 /* InternetConnectionHandler.swift in Sources */,
 				49AD6F4E20F882E200E11393 /* InternetConnectionError.swift in Sources */,
 				49AD6F5420F8834700E11393 /* ServiceError.swift in Sources */,
