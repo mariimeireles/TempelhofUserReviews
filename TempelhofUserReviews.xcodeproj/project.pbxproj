@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		49072F6920F8AED900BAB0A6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F6820F8AED900BAB0A6 /* Alamofire.framework */; };
-		49072F6B20F8AEDF00BAB0A6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F6A20F8AEDF00BAB0A6 /* Nimble.framework */; };
 		49072F6D20F8AEE500BAB0A6 /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F6C20F8AEE500BAB0A6 /* RxAlamofire.framework */; };
 		49072F6F20F8AEEC00BAB0A6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F6E20F8AEEC00BAB0A6 /* RxCocoa.framework */; };
 		49072F7120F8AEF200BAB0A6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F7020F8AEF200BAB0A6 /* RxSwift.framework */; };
-		49072F7320F8AEF900BAB0A6 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F7220F8AEF900BAB0A6 /* RxTest.framework */; };
 		49072F7520F8B00C00BAB0A6 /* UserReviewWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49072F7420F8B00C00BAB0A6 /* UserReviewWebService.swift */; };
 		49AD6F3620F87F8800E11393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6F3520F87F8800E11393 /* AppDelegate.swift */; };
 		49AD6F3D20F87F8900E11393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AD6F3C20F87F8900E11393 /* Assets.xcassets */; };
@@ -24,7 +22,40 @@
 		49AD6F5420F8834700E11393 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6F5320F8834700E11393 /* ServiceError.swift */; };
 		49AD6F5620F8835900E11393 /* RESTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6F5520F8835900E11393 /* RESTError.swift */; };
 		49AD6F6320F8AC1400E11393 /* UserReviewWebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6F6220F8AC1400E11393 /* UserReviewWebServiceProtocol.swift */; };
+		49CFD29020F8B5270052F5BE /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F7220F8AEF900BAB0A6 /* RxTest.framework */; };
+		49CFD29220F8B5460052F5BE /* RxTest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49072F7220F8AEF900BAB0A6 /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49CFD29320F8B5490052F5BE /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F7020F8AEF200BAB0A6 /* RxSwift.framework */; };
+		49CFD29420F8B54E0052F5BE /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49072F7020F8AEF200BAB0A6 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49CFD29520F8B5880052F5BE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F6A20F8AEDF00BAB0A6 /* Nimble.framework */; };
+		49CFD29620F8B58F0052F5BE /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49072F6A20F8AEDF00BAB0A6 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49CFD29B20F8B67A0052F5BE /* InfrastructureHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD29A20F8B67A0052F5BE /* InfrastructureHandlerTests.swift */; };
+		49CFD29D20F8B6B60052F5BE /* InternetConnectionHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD29C20F8B6B60052F5BE /* InternetConnectionHandlerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49CFD28B20F8B51C0052F5BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49AD6F2A20F87F8800E11393 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49AD6F3120F87F8800E11393;
+			remoteInfo = TempelhofUserReviews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49CFD29120F8B53A0052F5BE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				49CFD29620F8B58F0052F5BE /* Nimble.framework in CopyFiles */,
+				49CFD29420F8B54E0052F5BE /* RxSwift.framework in CopyFiles */,
+				49CFD29220F8B5460052F5BE /* RxTest.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		49072F6820F8AED900BAB0A6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
@@ -46,6 +77,10 @@
 		49AD6F5320F8834700E11393 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		49AD6F5520F8835900E11393 /* RESTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTError.swift; sourceTree = "<group>"; };
 		49AD6F6220F8AC1400E11393 /* UserReviewWebServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReviewWebServiceProtocol.swift; sourceTree = "<group>"; };
+		49CFD28620F8B51C0052F5BE /* TempelhofUserReviewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempelhofUserReviewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49CFD29720F8B6300052F5BE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49CFD29A20F8B67A0052F5BE /* InfrastructureHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfrastructureHandlerTests.swift; sourceTree = "<group>"; };
+		49CFD29C20F8B6B60052F5BE /* InternetConnectionHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionHandlerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +90,18 @@
 			files = (
 				49072F7120F8AEF200BAB0A6 /* RxSwift.framework in Frameworks */,
 				49072F6F20F8AEEC00BAB0A6 /* RxCocoa.framework in Frameworks */,
-				49072F7320F8AEF900BAB0A6 /* RxTest.framework in Frameworks */,
 				49072F6920F8AED900BAB0A6 /* Alamofire.framework in Frameworks */,
-				49072F6B20F8AEDF00BAB0A6 /* Nimble.framework in Frameworks */,
 				49072F6D20F8AEE500BAB0A6 /* RxAlamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CFD28320F8B51C0052F5BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49CFD29520F8B5880052F5BE /* Nimble.framework in Frameworks */,
+				49CFD29320F8B5490052F5BE /* RxSwift.framework in Frameworks */,
+				49CFD29020F8B5270052F5BE /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				49AD6F3420F87F8800E11393 /* TempelhofUserReviews */,
+				49CFD28720F8B51C0052F5BE /* TempelhofUserReviewsTests */,
 				49AD6F3320F87F8800E11393 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				49AD6F3220F87F8800E11393 /* TempelhofUserReviews.app */,
+				49CFD28620F8B51C0052F5BE /* TempelhofUserReviewsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,6 +271,24 @@
 			path = Libraries;
 			sourceTree = "<group>";
 		};
+		49CFD28720F8B51C0052F5BE /* TempelhofUserReviewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				49CFD29920F8B6670052F5BE /* Infrastructure */,
+				49CFD29720F8B6300052F5BE /* Info.plist */,
+			);
+			path = TempelhofUserReviewsTests;
+			sourceTree = "<group>";
+		};
+		49CFD29920F8B6670052F5BE /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				49CFD29A20F8B67A0052F5BE /* InfrastructureHandlerTests.swift */,
+				49CFD29C20F8B6B60052F5BE /* InternetConnectionHandlerTests.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,6 +310,25 @@
 			productReference = 49AD6F3220F87F8800E11393 /* TempelhofUserReviews.app */;
 			productType = "com.apple.product-type.application";
 		};
+		49CFD28520F8B51C0052F5BE /* TempelhofUserReviewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49CFD28F20F8B51C0052F5BE /* Build configuration list for PBXNativeTarget "TempelhofUserReviewsTests" */;
+			buildPhases = (
+				49CFD28220F8B51C0052F5BE /* Sources */,
+				49CFD28320F8B51C0052F5BE /* Frameworks */,
+				49CFD28420F8B51C0052F5BE /* Resources */,
+				49CFD29120F8B53A0052F5BE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49CFD28C20F8B51C0052F5BE /* PBXTargetDependency */,
+			);
+			name = TempelhofUserReviewsTests;
+			productName = TempelhofUserReviewsTests;
+			productReference = 49CFD28620F8B51C0052F5BE /* TempelhofUserReviewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -259,6 +341,11 @@
 				TargetAttributes = {
 					49AD6F3120F87F8800E11393 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					49CFD28520F8B51C0052F5BE = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						TestTargetID = 49AD6F3120F87F8800E11393;
 					};
 				};
 			};
@@ -276,6 +363,7 @@
 			projectRoot = "";
 			targets = (
 				49AD6F3120F87F8800E11393 /* TempelhofUserReviews */,
+				49CFD28520F8B51C0052F5BE /* TempelhofUserReviewsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,6 +375,13 @@
 			files = (
 				49AD6F4020F87F8900E11393 /* LaunchScreen.storyboard in Resources */,
 				49AD6F3D20F87F8900E11393 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CFD28420F8B51C0052F5BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +425,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		49CFD28220F8B51C0052F5BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49CFD29B20F8B67A0052F5BE /* InfrastructureHandlerTests.swift in Sources */,
+				49CFD29D20F8B6B60052F5BE /* InternetConnectionHandlerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49CFD28C20F8B51C0052F5BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49AD6F3120F87F8800E11393 /* TempelhofUserReviews */;
+			targetProxy = 49CFD28B20F8B51C0052F5BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		49AD6F3E20F87F8900E11393 /* LaunchScreen.storyboard */ = {
@@ -504,6 +616,57 @@
 			};
 			name = Release;
 		};
+		49CFD28D20F8B51C0052F5BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GQU3QL4RG3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TempelhofUserReviewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarianaMeireles.TempelhofUserReviewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempelhofUserReviews.app/TempelhofUserReviews";
+			};
+			name = Debug;
+		};
+		49CFD28E20F8B51C0052F5BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GQU3QL4RG3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TempelhofUserReviewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MarianaMeireles.TempelhofUserReviewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempelhofUserReviews.app/TempelhofUserReviews";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -521,6 +684,15 @@
 			buildConfigurations = (
 				49AD6F4520F87F8900E11393 /* Debug */,
 				49AD6F4620F87F8900E11393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49CFD28F20F8B51C0052F5BE /* Build configuration list for PBXNativeTarget "TempelhofUserReviewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49CFD28D20F8B51C0052F5BE /* Debug */,
+				49CFD28E20F8B51C0052F5BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
