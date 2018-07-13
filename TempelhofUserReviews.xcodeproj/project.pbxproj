@@ -13,6 +13,7 @@
 		49072F6F20F8AEEC00BAB0A6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F6E20F8AEEC00BAB0A6 /* RxCocoa.framework */; };
 		49072F7120F8AEF200BAB0A6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F7020F8AEF200BAB0A6 /* RxSwift.framework */; };
 		49072F7320F8AEF900BAB0A6 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072F7220F8AEF900BAB0A6 /* RxTest.framework */; };
+		49072F7520F8B00C00BAB0A6 /* UserReviewWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49072F7420F8B00C00BAB0A6 /* UserReviewWebService.swift */; };
 		49AD6F3620F87F8800E11393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6F3520F87F8800E11393 /* AppDelegate.swift */; };
 		49AD6F3D20F87F8900E11393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AD6F3C20F87F8900E11393 /* Assets.xcassets */; };
 		49AD6F4020F87F8900E11393 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AD6F3E20F87F8900E11393 /* LaunchScreen.storyboard */; };
@@ -32,6 +33,7 @@
 		49072F6E20F8AEEC00BAB0A6 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
 		49072F7020F8AEF200BAB0A6 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
 		49072F7220F8AEF900BAB0A6 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = SOURCE_ROOT; };
+		49072F7420F8B00C00BAB0A6 /* UserReviewWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReviewWebService.swift; sourceTree = "<group>"; };
 		49AD6F3220F87F8800E11393 /* TempelhofUserReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempelhofUserReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AD6F3520F87F8800E11393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49AD6F3C20F87F8900E11393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				49AD6F6220F8AC1400E11393 /* UserReviewWebServiceProtocol.swift */,
+				49072F7420F8B00C00BAB0A6 /* UserReviewWebService.swift */,
 			);
 			path = UserReviewWebService;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			files = (
 				49AD6F4920F8800200E11393 /* UserReview.swift in Sources */,
 				49AD6F5620F8835900E11393 /* RESTError.swift in Sources */,
+				49072F7520F8B00C00BAB0A6 /* UserReviewWebService.swift in Sources */,
 				49AD6F3620F87F8800E11393 /* AppDelegate.swift in Sources */,
 				49AD6F6320F8AC1400E11393 /* UserReviewWebServiceProtocol.swift in Sources */,
 				49AD6F5020F8831F00E11393 /* InternetConnectionHandler.swift in Sources */,
