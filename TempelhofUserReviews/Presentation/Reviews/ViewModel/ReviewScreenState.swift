@@ -1,9 +1,10 @@
 
 
-enum UserReviewScreenState {
+enum ReviewScreenState {
     case loading
     case success([ReviewModel])
-    case failure(UserReviewScreenErrorType)
+    case successWithNoReviews
+    case failure(ReviewScreenErrorType)
 
     init(restError: RESTError) {
         switch restError {

@@ -1,6 +1,7 @@
 
 
 struct UserReview: Codable {
+    
     let data: [DataDetails]
     
     struct DataDetails: Codable {

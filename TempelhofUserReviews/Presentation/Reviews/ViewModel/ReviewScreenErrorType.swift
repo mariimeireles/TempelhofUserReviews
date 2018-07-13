@@ -1,6 +1,6 @@
 
 
-enum UserReviewScreenErrorType {
+enum ReviewScreenErrorType {
     case noConnection
     case timeOut
     case serverError

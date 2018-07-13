@@ -11,8 +11,7 @@ final class ReviewModel {
     
     init(review: UserReview.DataDetails) throws {
         title = review.title
-        var number = (review.rating as NSString).doubleValue
-        number.round(.up)
+        let number = (review.rating as NSString).integerValue
         let imageName = "\(number)Stars"
         guard let image = UIImage(named: imageName) else { throw ServiceError.internalServerError }
         rating = image
