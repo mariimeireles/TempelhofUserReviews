@@ -1,6 +1,5 @@
 
 
-import Foundation
 import UIKit
 
 final class ReviewModel {

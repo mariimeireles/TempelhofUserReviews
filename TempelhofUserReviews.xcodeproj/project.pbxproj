@@ -31,6 +31,10 @@
 		49CFD29B20F8B67A0052F5BE /* InfrastructureHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD29A20F8B67A0052F5BE /* InfrastructureHandlerTests.swift */; };
 		49CFD29D20F8B6B60052F5BE /* InternetConnectionHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD29C20F8B6B60052F5BE /* InternetConnectionHandlerTests.swift */; };
 		49CFD29F20F8B7750052F5BE /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD29E20F8B7750052F5BE /* ReviewModel.swift */; };
+		49CFD2A120F8C0E30052F5BE /* UserReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD2A020F8C0E30052F5BE /* UserReviewViewModel.swift */; };
+		49CFD2A320F8C13D0052F5BE /* UserReviewMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD2A220F8C13D0052F5BE /* UserReviewMapper.swift */; };
+		49CFD2A520F8C16F0052F5BE /* UserReviewScreenErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD2A420F8C16F0052F5BE /* UserReviewScreenErrorType.swift */; };
+		49CFD2A720F8C1910052F5BE /* UserReviewScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CFD2A620F8C1910052F5BE /* UserReviewScreenState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		49CFD29A20F8B67A0052F5BE /* InfrastructureHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfrastructureHandlerTests.swift; sourceTree = "<group>"; };
 		49CFD29C20F8B6B60052F5BE /* InternetConnectionHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionHandlerTests.swift; sourceTree = "<group>"; };
 		49CFD29E20F8B7750052F5BE /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
+		49CFD2A020F8C0E30052F5BE /* UserReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReviewViewModel.swift; sourceTree = "<group>"; };
+		49CFD2A220F8C13D0052F5BE /* UserReviewMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReviewMapper.swift; sourceTree = "<group>"; };
+		49CFD2A420F8C16F0052F5BE /* UserReviewScreenErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReviewScreenErrorType.swift; sourceTree = "<group>"; };
+		49CFD2A620F8C1910052F5BE /* UserReviewScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReviewScreenState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +248,10 @@
 		49AD6F5E20F8863200E11393 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				49CFD2A020F8C0E30052F5BE /* UserReviewViewModel.swift */,
+				49CFD2A220F8C13D0052F5BE /* UserReviewMapper.swift */,
+				49CFD2A620F8C1910052F5BE /* UserReviewScreenState.swift */,
+				49CFD2A420F8C16F0052F5BE /* UserReviewScreenErrorType.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -419,12 +431,16 @@
 				49AD6F4920F8800200E11393 /* UserReview.swift in Sources */,
 				49AD6F5620F8835900E11393 /* RESTError.swift in Sources */,
 				49072F7520F8B00C00BAB0A6 /* UserReviewWebService.swift in Sources */,
+				49CFD2A120F8C0E30052F5BE /* UserReviewViewModel.swift in Sources */,
 				49AD6F3620F87F8800E11393 /* AppDelegate.swift in Sources */,
 				49AD6F6320F8AC1400E11393 /* UserReviewWebServiceProtocol.swift in Sources */,
 				49CFD29F20F8B7750052F5BE /* ReviewModel.swift in Sources */,
+				49CFD2A320F8C13D0052F5BE /* UserReviewMapper.swift in Sources */,
 				49AD6F5020F8831F00E11393 /* InternetConnectionHandler.swift in Sources */,
+				49CFD2A520F8C16F0052F5BE /* UserReviewScreenErrorType.swift in Sources */,
 				49AD6F4E20F882E200E11393 /* InternetConnectionError.swift in Sources */,
 				49AD6F5420F8834700E11393 /* ServiceError.swift in Sources */,
+				49CFD2A720F8C1910052F5BE /* UserReviewScreenState.swift in Sources */,
 				49AD6F5220F8833400E11393 /* InfrastructureHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
