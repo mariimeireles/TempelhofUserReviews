@@ -21,6 +21,10 @@
 		49A7E89220F8D3AC00F51D22 /* ReviewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7E89120F8D3AC00F51D22 /* ReviewViewModelTests.swift */; };
 		49A7E89420F8D4AA00F51D22 /* TestsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7E89320F8D4AA00F51D22 /* TestsExtension.swift */; };
 		49A7E89620F8D7B700F51D22 /* ReviewMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7E89520F8D7B700F51D22 /* ReviewMapperTests.swift */; };
+		49A7E89A20F8DE8300F51D22 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7E89820F8DE8300F51D22 /* ReviewCell.swift */; };
+		49A7E89B20F8DE8300F51D22 /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A7E89920F8DE8300F51D22 /* ReviewCell.xib */; };
+		49A7E89D20F8E3B000F51D22 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7E89C20F8E3B000F51D22 /* NSObjectExtension.swift */; };
+		49A7E89F20F8E9CB00F51D22 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7E89E20F8E9CB00F51D22 /* Injector.swift */; };
 		49AD6F3620F87F8800E11393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6F3520F87F8800E11393 /* AppDelegate.swift */; };
 		49AD6F3D20F87F8900E11393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AD6F3C20F87F8900E11393 /* Assets.xcassets */; };
 		49AD6F4020F87F8900E11393 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AD6F3E20F87F8900E11393 /* LaunchScreen.storyboard */; };
@@ -88,6 +92,10 @@
 		49A7E89120F8D3AC00F51D22 /* ReviewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModelTests.swift; sourceTree = "<group>"; };
 		49A7E89320F8D4AA00F51D22 /* TestsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsExtension.swift; sourceTree = "<group>"; };
 		49A7E89520F8D7B700F51D22 /* ReviewMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewMapperTests.swift; sourceTree = "<group>"; };
+		49A7E89820F8DE8300F51D22 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		49A7E89920F8DE8300F51D22 /* ReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
+		49A7E89C20F8E3B000F51D22 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		49A7E89E20F8E9CB00F51D22 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		49AD6F3220F87F8800E11393 /* TempelhofUserReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempelhofUserReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AD6F3520F87F8800E11393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49AD6F3C20F87F8900E11393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,6 +160,15 @@
 				49A7E89520F8D7B700F51D22 /* ReviewMapperTests.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		49A7E89720F8DE5F00F51D22 /* ReviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				49A7E89820F8DE8300F51D22 /* ReviewCell.swift */,
+				49A7E89920F8DE8300F51D22 /* ReviewCell.xib */,
+			);
+			path = ReviewCell;
 			sourceTree = "<group>";
 		};
 		49AD6F2920F87F8800E11393 = {
@@ -236,6 +253,7 @@
 				49A7E88A20F8CE6400F51D22 /* JSON.swift */,
 				49A7E88C20F8CE7A00F51D22 /* URLError.swift */,
 				49AD6F6420F8AC2800E11393 /* Libraries */,
+				49A7E89C20F8E3B000F51D22 /* NSObjectExtension.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -253,6 +271,7 @@
 			children = (
 				49A7E88720F8CDD600F51D22 /* TestMock */,
 				49AD6F3520F87F8800E11393 /* AppDelegate.swift */,
+				49A7E89E20F8E9CB00F51D22 /* Injector.swift */,
 				49AD6F4120F87F8900E11393 /* Info.plist */,
 				49AD6F3E20F87F8900E11393 /* LaunchScreen.storyboard */,
 			);
@@ -280,6 +299,7 @@
 		49AD6F5D20F8862B00E11393 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				49A7E89720F8DE5F00F51D22 /* ReviewCell */,
 				49A7E88320F8CCEC00F51D22 /* ReviewsViewController.swift */,
 				49A7E88420F8CCEC00F51D22 /* ReviewsViewController.xib */,
 			);
@@ -432,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A7E88620F8CCEC00F51D22 /* ReviewsViewController.xib in Resources */,
+				49A7E89B20F8DE8300F51D22 /* ReviewCell.xib in Resources */,
 				49AD6F4020F87F8900E11393 /* LaunchScreen.storyboard in Resources */,
 				49AD6F3D20F87F8900E11393 /* Assets.xcassets in Resources */,
 			);
@@ -473,11 +494,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				49AD6F4920F8800200E11393 /* UserReview.swift in Sources */,
+				49A7E89A20F8DE8300F51D22 /* ReviewCell.swift in Sources */,
 				49A7E88520F8CCEC00F51D22 /* ReviewsViewController.swift in Sources */,
 				49A7E88D20F8CE7A00F51D22 /* URLError.swift in Sources */,
 				49AD6F5620F8835900E11393 /* RESTError.swift in Sources */,
+				49A7E89F20F8E9CB00F51D22 /* Injector.swift in Sources */,
 				49A7E88920F8CDEA00F51D22 /* UserReviewWebServiceMock.swift in Sources */,
 				49072F7520F8B00C00BAB0A6 /* UserReviewWebService.swift in Sources */,
+				49A7E89D20F8E3B000F51D22 /* NSObjectExtension.swift in Sources */,
 				49CFD2A120F8C0E30052F5BE /* ReviewViewModel.swift in Sources */,
 				49AD6F3620F87F8800E11393 /* AppDelegate.swift in Sources */,
 				49AD6F6320F8AC1400E11393 /* UserReviewWebServiceProtocol.swift in Sources */,
