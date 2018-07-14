@@ -21,9 +21,9 @@ final class NewReviewViewController: UIViewController {
         reviewText.layer.cornerRadius = 5
     }
     @IBAction func submitButton(_ sender: Any) {
-        print(ratingControl.rating)
-        print(reviewTitle.text)
-        print(reviewText.text)
+//        print(ratingControl.rating)
+//        print(reviewTitle.text)
+//        print(reviewText.text)
     }
     
 }

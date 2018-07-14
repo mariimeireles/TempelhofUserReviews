@@ -9,10 +9,14 @@ final class ReviewMapper {
         let data = try review.data.map {
             try ReviewModel(review: $0)
         }
-//        if data.isEmpty {
-//            return ReviewScreenState.successWithNoReviews
-//        }
+        if data.isEmpty {
+            return ReviewScreenState.successWithNoReviews
+        }
         return ReviewScreenState.success(data)
+    }
+    
+    func mapInputsToNewUserReview(rating: Int, title: String, message: String) throws -> NewUserReview {
+        return NewUserReview(rating: rating, title: title, message: message)
     }
 
     func mapErrorToScreenState(_ error: Error) -> ReviewScreenState {

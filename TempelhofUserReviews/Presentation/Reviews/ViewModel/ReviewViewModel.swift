@@ -25,6 +25,6 @@ final class ReviewsViewModel {
             .catchError { [unowned self] (error) -> Observable<ReviewScreenState> in
                 let state = self.mapper.mapErrorToScreenState(error)
                 return Observable.just(state)
-        }
+            }
     }
 }
