@@ -1,7 +1,7 @@
 
 
-@testable import TempelhofUserReviews
 import Nimble
+@testable import TempelhofUserReviews
 import XCTest
 
 final class InfrastructureHandlerTests: XCTestCase {

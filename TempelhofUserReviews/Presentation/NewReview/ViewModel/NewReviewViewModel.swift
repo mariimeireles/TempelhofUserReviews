@@ -11,7 +11,7 @@ final class NewReviewViewModel {
         self.webService = webService
         self.mapper = mapper
     }
-    
+
     func postNewReview(with rating: Int, title: String, message: String) -> Observable<ReviewScreenState> {
         return self.getScreenStateFrom(rating: rating, title: title, message: message)
             .startWith(.loading)

@@ -7,7 +7,7 @@ import RxSwift
 final class NewUserReviewWebService: NewUserReviewWebServiceProtocol {
     
     private let postUrl = "https://private-ade97-tempelhofuserreviews.apiary-mock.com/reviews"
-
+    
     func postLoginInfo(_ newReview: NewUserReview) -> Observable<UserReview> {
         let decoder = JSONDecoder()
         let infraHandler = InfrastructureHandler()
@@ -33,7 +33,6 @@ final class NewUserReviewWebService: NewUserReviewWebServiceProtocol {
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 return try decoder.decode(UserReview.self, from: data)
             })
-
     }
     
     private func convertReviewToJSON(_ review: NewUserReview) throws -> JSON {
@@ -46,5 +45,4 @@ final class NewUserReviewWebService: NewUserReviewWebServiceProtocol {
             throw ServiceError.jsonParse
         }
     }
-    
 }

@@ -3,15 +3,15 @@
 import RxSwift
 
 final class ReviewsViewModel {
-    
+
     private let webService: UserReviewWebServiceProtocol
     private let mapper: ReviewMapper
-    
+
     init(webService: UserReviewWebServiceProtocol, mapper: ReviewMapper) {
         self.webService = webService
         self.mapper = mapper
     }
-    
+
     func getReviews() -> Observable<ReviewScreenState> {
         return getScreenState()
             .startWith(.loading)

@@ -32,6 +32,7 @@
 		49A7E8AC20F9ECF000F51D22 /* NewUserReviewWebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7E8AB20F9ECF000F51D22 /* NewUserReviewWebServiceProtocol.swift */; };
 		49A7E8AE20F9ED5100F51D22 /* NewUserReviewWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7E8AD20F9ED5100F51D22 /* NewUserReviewWebService.swift */; };
 		49A7E8B320F9F1F500F51D22 /* NewReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7E8B220F9F1F500F51D22 /* NewReviewViewModel.swift */; };
+		49A7E8B520FA098200F51D22 /* ProjectColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7E8B420FA098200F51D22 /* ProjectColors.swift */; };
 		49AD6F3620F87F8800E11393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AD6F3520F87F8800E11393 /* AppDelegate.swift */; };
 		49AD6F3D20F87F8900E11393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AD6F3C20F87F8900E11393 /* Assets.xcassets */; };
 		49AD6F4020F87F8900E11393 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AD6F3E20F87F8900E11393 /* LaunchScreen.storyboard */; };
@@ -110,6 +111,7 @@
 		49A7E8AB20F9ECF000F51D22 /* NewUserReviewWebServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserReviewWebServiceProtocol.swift; sourceTree = "<group>"; };
 		49A7E8AD20F9ED5100F51D22 /* NewUserReviewWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserReviewWebService.swift; sourceTree = "<group>"; };
 		49A7E8B220F9F1F500F51D22 /* NewReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReviewViewModel.swift; sourceTree = "<group>"; };
+		49A7E8B420FA098200F51D22 /* ProjectColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectColors.swift; sourceTree = "<group>"; };
 		49AD6F3220F87F8800E11393 /* TempelhofUserReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempelhofUserReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AD6F3520F87F8800E11393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49AD6F3C20F87F8900E11393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -304,8 +306,9 @@
 			children = (
 				49A7E88A20F8CE6400F51D22 /* JSON.swift */,
 				49A7E88C20F8CE7A00F51D22 /* URLError.swift */,
-				49AD6F6420F8AC2800E11393 /* Libraries */,
 				49A7E89C20F8E3B000F51D22 /* NSObjectExtension.swift */,
+				49A7E8B420FA098200F51D22 /* ProjectColors.swift */,
+				49AD6F6420F8AC2800E11393 /* Libraries */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				49AD6F3620F87F8800E11393 /* AppDelegate.swift in Sources */,
 				49AD6F6320F8AC1400E11393 /* UserReviewWebServiceProtocol.swift in Sources */,
 				49CFD29F20F8B7750052F5BE /* ReviewModel.swift in Sources */,
+				49A7E8B520FA098200F51D22 /* ProjectColors.swift in Sources */,
 				49A7E8AE20F9ED5100F51D22 /* NewUserReviewWebService.swift in Sources */,
 				49CFD2A320F8C13D0052F5BE /* ReviewMapper.swift in Sources */,
 				49AD6F5020F8831F00E11393 /* InternetConnectionHandler.swift in Sources */,

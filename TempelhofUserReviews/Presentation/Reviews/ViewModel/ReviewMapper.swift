@@ -14,7 +14,7 @@ final class ReviewMapper {
         }
         return ReviewScreenState.success(data)
     }
-    
+
     func mapInputsToNewUserReview(rating: Int, title: String, message: String) throws -> NewUserReview {
         return NewUserReview(rating: rating, title: title, message: message)
     }

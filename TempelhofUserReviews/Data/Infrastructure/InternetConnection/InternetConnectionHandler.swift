@@ -3,10 +3,10 @@
 import Foundation
 
 class InternetConnectionHandler {
-    
+
     func verifyConnection(_ error: Error) throws {
         guard let urlError = error as? URLError else { throw error }
-        
+
         if urlError.code == .notConnectedToInternet {
             throw ServiceError.connection(.noConnection)
         }

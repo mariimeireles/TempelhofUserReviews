@@ -33,7 +33,6 @@ final class UserReviewWebServiceMock: UserReviewWebServiceProtocol {
         }
     }
     
-    
     func getReviews() -> Observable<UserReview> {
         let decoder = JSONDecoder()
         let infraHandler = InfrastructureHandler()
@@ -52,7 +51,6 @@ final class UserReviewWebServiceMock: UserReviewWebServiceProtocol {
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 return try decoder.decode(UserReview.self, from: data)
             })
-
     }
     
     private var someReviews: UserReview {
@@ -74,7 +72,7 @@ final class UserReviewWebServiceMock: UserReviewWebServiceProtocol {
                     "review_id": 3030630,
                     "rating": "4.0",
                     "title": ""
-
+                    
                 ],
                 [
                     "review_id": 3027438,

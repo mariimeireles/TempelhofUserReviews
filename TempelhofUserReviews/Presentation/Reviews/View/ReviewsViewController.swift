@@ -3,7 +3,7 @@
 import RxSwift
 import UIKit
 
-final class ReviewsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+final class ReviewsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NewReviewViewControllerDelegate {
     
     @IBOutlet private var tableView: UITableView!
     @IBOutlet private var activityIndicator: UIActivityIndicatorView!
@@ -31,12 +31,18 @@ final class ReviewsViewController: UIViewController, UITableViewDataSource, UITa
     
     @IBAction func addReviewButton(_ sender: Any) {
         let newReviewViewController = NewReviewViewController(withViewModel: newReviewViewModel)
+        newReviewViewController.delegate = self
         navigationController?.pushViewController(newReviewViewController, animated: false)
     }
     
     private func tableViewLayout() {
         let nib = UINib(nibName: "ReviewCell", bundle: Bundle.main)
         tableView.register(nib, forCellReuseIdentifier: "ReviewCell")
+    }
+    
+    func newReviewResponse(_ newReviews: [ReviewModel]) {
+        self.reviews = newReviews
+        self.tableView.reloadData()
     }
     
     @objc private func setScreenState() {
@@ -95,7 +101,7 @@ final class ReviewsViewController: UIViewController, UITableViewDataSource, UITa
         }
     }
     
-    private func alertWith(title: String, message: String, actionTitle: String) -> UIAlertController {
+    func alertWith(title: String, message: String, actionTitle: String) -> UIAlertController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: actionTitle, style: .default, handler: { [unowned self] (_) -> Void in
             self.setScreenState()

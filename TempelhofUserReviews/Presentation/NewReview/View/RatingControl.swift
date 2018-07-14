@@ -10,17 +10,19 @@ import UIKit
             updateButtonSelectionStates()
         }
     }
+    
     @IBInspectable private var starSize: CGSize = CGSize(width: 50.0, height: 50.0) {
         didSet {
             setupButtons()
         }
     }
+    
     @IBInspectable private var starCount: Int = 5 {
         didSet {
             setupButtons()
         }
     }
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupButtons()
@@ -39,7 +41,7 @@ import UIKit
         ratingButtons.removeAll()
         let bundle = Bundle(for: type(of: self))
         let filledStar = UIImage(named: "filledStar", in: bundle, compatibleWith: self.traitCollection)
-        let emptyStar = UIImage(named:"emptyStar", in: bundle, compatibleWith: self.traitCollection)
+        let emptyStar = UIImage(named: "emptyStar", in: bundle, compatibleWith: self.traitCollection)
         for _ in 0..<starCount {
             let button = UIButton()
             button.setImage(emptyStar, for: .normal)
@@ -71,5 +73,4 @@ import UIKit
             button.isSelected = index < rating
         }
     }
-    
 }

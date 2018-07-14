@@ -1,9 +1,9 @@
 
 
-@testable import TempelhofUserReviews
 import Nimble
 import RxSwift
 import RxTest
+@testable import TempelhofUserReviews
 import XCTest
 
 final class ReviewViewModelTests: XCTestCase {

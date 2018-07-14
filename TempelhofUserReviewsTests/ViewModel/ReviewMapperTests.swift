@@ -1,7 +1,7 @@
 
 
-@testable import TempelhofUserReviews
 import Nimble
+@testable import TempelhofUserReviews
 import XCTest
 
 final class ReviewMapperTests: XCTestCase {
@@ -22,10 +22,9 @@ final class ReviewMapperTests: XCTestCase {
         let data = [UserReview.DataDetails(rating: "4.0", title: "", message: "viele interessante Informationen und Fakten wurden vermittelt inkl. vieler Details. Leider war der Außenbereich aufgrund einer Veranstaltung nicht zugänglich (was sich aber nicht im Preis niederschlug).\nEs wäre gut, wenn man ein Handout/Skizze/Flyer mit einer kurzen Zusammenfassung der wesentlichen Fakten und Informationen zum Nachlesen zum Abschluss bekommen würde (wäre auch durch den Preis gerechtfertigt).", author: "Sylvia – Germany", date: "July 12, 2018"),
                     UserReview.DataDetails(rating: "4.0", title: "Stunning", message: "", author: "Franca – Italy", date: "July 12, 2018")]
         let userReview = UserReview(data: data)
-
+        
         do {
             let reviewScreenState = try reviewMapper.mapReviewsRequestToSuccessState(userReview)
-            print(reviewScreenState)
             switch reviewScreenState {
             case .success(let data):
                 if let data = data.first {
