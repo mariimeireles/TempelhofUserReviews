@@ -14,6 +14,14 @@ final class Injector {
         return ReviewsViewModel(webService: userReviewWebService(), mapper: self.reviewMapper)
     }
     
+    func newReviewViewModel() -> NewReviewViewModel {
+        return NewReviewViewModel(webService: newUserReviewWebService(), mapper: self.reviewMapper)
+    }
+    
+    func newUserReviewWebService() -> NewUserReviewWebServiceProtocol {
+        return NewUserReviewWebService()
+    }
+    
     func userReviewWebService() -> UserReviewWebServiceProtocol {
         return UserReviewWebService()
     }

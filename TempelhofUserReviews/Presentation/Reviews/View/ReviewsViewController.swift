@@ -9,11 +9,13 @@ final class ReviewsViewController: UIViewController, UITableViewDataSource, UITa
     @IBOutlet private var activityIndicator: UIActivityIndicatorView!
     @IBOutlet private var noReviewsLabel: UILabel!
     private let disposeBag = DisposeBag()
-    private let viewModel: ReviewsViewModel!
+    private let viewModel: ReviewsViewModel
+    private let newReviewViewModel: NewReviewViewModel
     private var reviews: [ReviewModel]!
     
-    init(withViewModel viewModel: ReviewsViewModel) {
+    init(withViewModel viewModel: ReviewsViewModel, newReviewViewModel: NewReviewViewModel) {
         self.viewModel = viewModel
+        self.newReviewViewModel = newReviewViewModel
         super.init(nibName: ReviewsViewController.identifier, bundle: Bundle.main)
     }
     
@@ -28,7 +30,7 @@ final class ReviewsViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     @IBAction func addReviewButton(_ sender: Any) {
-        let newReviewViewController = NewReviewViewController(nibName: NewReviewViewController.identifier, bundle: Bundle.main)
+        let newReviewViewController = NewReviewViewController(withViewModel: newReviewViewModel)
         navigationController?.pushViewController(newReviewViewController, animated: false)
     }
     

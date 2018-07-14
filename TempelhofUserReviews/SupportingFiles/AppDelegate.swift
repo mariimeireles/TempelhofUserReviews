@@ -10,7 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         let injector = Injector(with: CommandLine.arguments, reviewMapper: ReviewMapper())
-        let reviewsViewController = ReviewsViewController(withViewModel: injector.reviewsViewModel())
+        let reviewsViewController = ReviewsViewController(withViewModel: injector.reviewsViewModel(), newReviewViewModel: injector.newReviewViewModel())
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white

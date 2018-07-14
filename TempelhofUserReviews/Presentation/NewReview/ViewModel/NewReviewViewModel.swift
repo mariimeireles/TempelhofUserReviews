@@ -17,7 +17,7 @@ final class NewReviewViewModel {
             .startWith(.loading)
     }
 
-    func getScreenStateFrom(rating: Int, title: String, message: String) -> Observable<ReviewScreenState> {
+    private func getScreenStateFrom(rating: Int, title: String, message: String) -> Observable<ReviewScreenState> {
         guard let newReview = try? mapper.mapInputsToNewUserReview(rating: rating, title: title, message: message) else { return Observable.just(ReviewScreenState.failure(.unknown)) }
         return self.webService.postLoginInfo(newReview)
             .map { [unowned self] reviews in
