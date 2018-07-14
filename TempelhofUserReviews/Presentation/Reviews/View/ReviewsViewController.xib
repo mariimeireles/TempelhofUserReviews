@@ -25,18 +25,32 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rgL-FI-JKo">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="NIV-Bb-Aac">
                     <rect key="frame" x="177" y="162" width="20" height="20"/>
                 </activityIndicatorView>
                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are no reviews yet. Write the first one!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZe-QS-9Sq">
-                    <rect key="frame" x="57" y="213.5" width="262.5" height="53.5"/>
+                    <rect key="frame" x="56" y="214" width="263" height="54"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TM-CZ-Gsx">
+                    <rect key="frame" x="37.5" y="597" width="300" height="40"/>
+                    <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="nKD-OC-CmL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Add a review">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addReviewButton:" destination="-1" eventType="touchUpInside" id="1jr-yB-SnJ"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -44,11 +58,14 @@
                 <constraint firstItem="MZe-QS-9Sq" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.7" id="73E-gf-SFO"/>
                 <constraint firstItem="MZe-QS-9Sq" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.08" id="AxJ-Qm-fLO"/>
                 <constraint firstItem="MZe-QS-9Sq" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="LKw-QU-ttW"/>
-                <constraint firstItem="rgL-FI-JKo" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="WfU-II-Tif"/>
+                <constraint firstItem="3TM-CZ-Gsx" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="P9B-O4-aFA"/>
+                <constraint firstItem="3TM-CZ-Gsx" firstAttribute="top" secondItem="rgL-FI-JKo" secondAttribute="bottom" constant="30" id="VlO-RD-4Yb"/>
                 <constraint firstItem="NIV-Bb-Aac" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.5" id="XWT-Ua-DyZ"/>
                 <constraint firstItem="NIV-Bb-Aac" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="f4q-ds-JOb"/>
                 <constraint firstItem="MZe-QS-9Sq" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="gEl-J4-RPJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3TM-CZ-Gsx" secondAttribute="bottom" constant="30" id="hXa-b0-qMr"/>
                 <constraint firstItem="rgL-FI-JKo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iRj-3L-PWj"/>
+                <constraint firstItem="3TM-CZ-Gsx" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jG6-2C-IiG"/>
                 <constraint firstItem="rgL-FI-JKo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="n7d-m2-e2J"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  TempelhofUserReviews
-//
-//  Created by Mariana Meireles on 13/07/18.
-//  Copyright © 2018 Mariana Meireles. All rights reserved.
-//
+
 
 import UIKit
 
@@ -20,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = reviewsViewController
+        window?.rootViewController = UINavigationController(rootViewController: reviewsViewController)
         window?.makeKeyAndVisible()
         
         return true

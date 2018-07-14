@@ -25,4 +25,14 @@ final class ReviewCell: UITableViewCell {
         }
     }
     
+//    func fillOutlets(_ review: ReviewModel) {
+////        guard let review = review else { return }
+//        DispatchQueue.main.async {
+//            self.title.text = review.title
+//            self.rating.image = review.rating
+//            self.message.text = review.message
+//            self.author.text = review.author
+//        }
+//    }
+    
 }

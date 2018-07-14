@@ -4,10 +4,10 @@ import RxSwift
 import UIKit
 
 final class ReviewsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    @IBOutlet weak private var tableView: UITableView!
-    @IBOutlet weak private var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak private var noReviewsLabel: UILabel!
+    
+    @IBOutlet private var tableView: UITableView!
+    @IBOutlet private var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet private var noReviewsLabel: UILabel!
     private let disposeBag = DisposeBag()
     private let viewModel: ReviewsViewModel!
     private var reviews: [ReviewModel]!
@@ -25,6 +25,11 @@ final class ReviewsViewController: UIViewController, UITableViewDataSource, UITa
         super.viewDidLoad()
         tableViewLayout()
         setScreenState()
+    }
+    
+    @IBAction func addReviewButton(_ sender: Any) {
+        let newReviewViewController = NewReviewViewController(nibName: NewReviewViewController.identifier, bundle: Bundle.main)
+        navigationController?.pushViewController(newReviewViewController, animated: false)
     }
     
     private func tableViewLayout() {
@@ -65,7 +70,7 @@ final class ReviewsViewController: UIViewController, UITableViewDataSource, UITa
             self.tableView.dataSource = self
             self.tableView.delegate = self
             self.tableView.rowHeight = UITableViewAutomaticDimension
-            self.tableView.estimatedRowHeight = 500
+            self.tableView.estimatedRowHeight = 200
             self.tableView.reloadData()
         }
     }
@@ -88,7 +93,7 @@ final class ReviewsViewController: UIViewController, UITableViewDataSource, UITa
         }
     }
     
-    private func alertWith(title: String, message: String, actionTitle: String) ->  UIAlertController {
+    private func alertWith(title: String, message: String, actionTitle: String) -> UIAlertController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: actionTitle, style: .default, handler: { [unowned self] (_) -> Void in
             self.setScreenState()
@@ -105,6 +110,4 @@ final class ReviewsViewController: UIViewController, UITableViewDataSource, UITa
         cell.review = reviews[indexPath.row]
         return cell
     }
-
-
 }
