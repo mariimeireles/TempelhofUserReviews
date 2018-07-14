@@ -6,8 +6,8 @@ This is a project that allows users to browse and submit reviews of the [Tempelh
 
 This application uses:
 
-* macOS High Sierra 10.13.5
-* Xcode 9.4
+* macOS High Sierra 10.13.6
+* Xcode 9.4.1
 * Swift 4.1
 * iOS 10+
 
@@ -24,9 +24,9 @@ Ensure that Carthage is set up. To know how to install, check [Carthage docs](ht
 
 ## Built With
 
-*[RxSwift](https://github.com/ReactiveX/RxSwift) - To handle asynchronous events. Reactive programming was chosen because of it possible to express static and dynamic data streams with ease and in a more readable way.
-*[RxAlamofire](https://github.com/RxSwiftCommunity/RxAlamofire) - To perform networking tasks using RxSwift.
-*[Nimble](https://github.com/Quick/Nimble) - To make tests more pleasant to read.
+* [RxSwift](https://github.com/ReactiveX/RxSwift) - To handle asynchronous events. Reactive programming was chosen because of it possible to express static and dynamic data streams with ease and in a more readable way.
+* [RxAlamofire](https://github.com/RxSwiftCommunity/RxAlamofire) - To perform networking tasks using RxSwift.
+* [Nimble](https://github.com/Quick/Nimble) - To make tests more pleasant to read.
 
 ## Run Tests
 
